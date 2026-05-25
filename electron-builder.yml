@@ -1,0 +1,20 @@
+appId: com.steamclient.app
+productName: Steam Client
+directories:
+  output: dist-electron
+files:
+  - main.js
+  - preload.js
+  - src/ipc-handlers.js
+  - src/db.js
+  - dist/**/*
+  - assets/**/*
+  - node_modules/**/*
+win:
+  target: nsis
+  icon: assets/icon.png
+nsis:
+  oneClick: false
+  allowToChangeInstallationDirectory: true
+  createDesktopShortcut: true
+  createStartMenuShortcut: true
