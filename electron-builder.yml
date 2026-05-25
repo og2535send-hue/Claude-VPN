@@ -1,0 +1,18 @@
+appId: com.steamclient.app
+productName: Steam Client
+directories:
+  output: release
+files:
+  - main.js
+  - preload.js
+  - src/db.js
+  - src/ipc-handlers.js
+  - dist/**/*
+  - assets/**/*
+  - package.json
+win:
+  target: nsis
+  icon: assets/icon.png
+nsis:
+  oneClick: false
+  allowToChangeInstallationDirectory: true
